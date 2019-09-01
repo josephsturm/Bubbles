@@ -11,7 +11,7 @@ import processing.sound.SoundFile;
 
 // constants
 final int FRAMERATE = 60;          // the scene's framerate
-final int BUBBLE_DIAMETER = 75;   // the diameter of each bubble
+final int BUBBLE_DIAMETER = 75;    // the diameter of each bubble
 final int MAX_BUBBLES = 30;        // the max number of bubbles at any time
 final int APPEAR_INTERVAL = 1;     // how often bubbles appear
 final int NUM_APPEAR = 5;          // the max number of bubbles that can appear
