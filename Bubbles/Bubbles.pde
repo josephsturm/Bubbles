@@ -69,7 +69,9 @@ class Bubble {
     
     // draw upper left reflection (depth)
     noStroke(); fill(100, 175);
-    ellipse(pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 15, 15);
+    ellipse(
+      pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 15, 15
+    );
     
     // draw colored inner ring
     stroke(color_choice, 125); strokeWeight(6); fill(75, 55);
@@ -81,7 +83,9 @@ class Bubble {
     
     // draw upper left reflection
     noStroke(); fill(255);
-    ellipse(pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 10, 10);
+    ellipse(
+      pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 10, 10
+    );
   }
 }
 
