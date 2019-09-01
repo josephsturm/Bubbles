@@ -11,8 +11,8 @@ import processing.sound.SoundFile;
 
 // constants
 final int FRAMERATE = 60;          // the scene's framerate
-final int BUBBLE_DIAMETER = 100;   // the diameter of each bubble
-final int MAX_BUBBLES = 20;        // the max number of bubbles at any time
+final int BUBBLE_DIAMETER = 75;   // the diameter of each bubble
+final int MAX_BUBBLES = 30;        // the max number of bubbles at any time
 final int APPEAR_INTERVAL = 1;     // how often bubbles appear
 final int NUM_APPEAR = 5;          // the max number of bubbles that can appear
 
@@ -69,7 +69,7 @@ class Bubble {
     
     // draw upper left reflection (depth)
     noStroke(); fill(100, 175);
-    ellipse(pos_x - 30, pos_y - 32, 15, 15);
+    ellipse(pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 15, 15);
     
     // draw colored inner ring
     stroke(color_choice, 125); strokeWeight(6); fill(75, 55);
@@ -81,7 +81,7 @@ class Bubble {
     
     // draw upper left reflection
     noStroke(); fill(255);
-    ellipse(pos_x - 30, pos_y - 32, 10, 10);
+    ellipse(pos_x - BUBBLE_DIAMETER * 0.30, pos_y - BUBBLE_DIAMETER * 0.32, 10, 10);
   }
 }
 
